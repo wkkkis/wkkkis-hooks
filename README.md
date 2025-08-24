@@ -1,11 +1,17 @@
+[![npm version](https://img.shields.io/npm/v/wkkkis-hooks.svg?style=flat&color=blue)](https://www.npmjs.com/package/wkkkis-hooks)
+[![npm downloads](https://img.shields.io/npm/dm/wkkkis-hooks.svg?color=brightgreen)](https://www.npmjs.com/package/wkkkis-hooks)
+[![Node.js Version](https://img.shields.io/badge/node-%3E=18-green)](https://nodejs.org)
+[![License](https://img.shields.io/github/license/wkkkis/wkkkis-hooks)](LICENSE)
+
 # wkkkis-hooks
 
 A tiny CLI for installing ready-to-use **React/Next.js hooks** from a public registry into your project.  
-Think of it as *npm install* — but only for hooks.
+Think of it as _npm install_ — but only for hooks.
 
 ---
 
 ## ✨ Features
+
 - 🚀 Install hooks directly from the [wkkkis/hooks-registry](https://github.com/wkkkis/hooks-registry)
 - 📂 Configurable install path (`src/hooks` by default)
 - 🪝 Auto-update `index.ts` with exports
@@ -61,9 +67,9 @@ The CLI creates a `hooks.config.json` in your project root:
 }
 ```
 
-- **baseDir** — where hooks will be installed.  
-- **addIndex** — auto-maintain an `index.ts` with re-exports.  
-- **stripUseClient** — remove `"use client"` directive from installed hooks.  
+- **baseDir** — where hooks will be installed.
+- **addIndex** — auto-maintain an `index.ts` with re-exports.
+- **stripUseClient** — remove `"use client"` directive from installed hooks.
 - **aliasPrefix / aliasTarget** — rewrite import paths from an alias (e.g. `@/components`) into relative paths when writing files.
 
 ---
