@@ -1,0 +1,46 @@
+{
+  "name": "wkkkis-hooks",
+  "version": "1.0.0",
+  "description": "Tiny CLI to fetch/install React hooks from wkkkis/hooks-registry into your project",
+  "author": "Iskhak <ishakishmahametov123@gmail.com>",
+  "bin": {
+    "wkkkis-hooks": "dist/cli.cjs"
+  },
+  "main": "index.js",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "homepage": "https://github.com/wkkkis/wkkkis-hooks#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wkkkis/wkkkis-hooks.git"
+  },
+  "scripts": {
+    "build": "tsup src/cli.ts --format cjs --no-dts --sourcemap --clean",
+    "dev": "tsup src/cli.ts --watch --format cjs",
+    "prepublishOnly": "npm run build"
+  },
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "kleur": "^4.1.5",
+    "prompts": "^2.4.2"
+  },
+  "devDependencies": {
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.5.0",
+    "typescript": "^5.9.2"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "keywords": [
+    "react",
+    "hooks",
+    "cli",
+    "nextjs",
+    "utilities"
+  ]
+}
