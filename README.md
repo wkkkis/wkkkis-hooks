@@ -39,16 +39,16 @@ Requires **Node.js 18+**.
 wkkkis-hooks init
 
 # Install a hook
-wkkkis-hooks add use-debounce
+wkkkis-hooks add use-debounce-callback
 
 # List available hooks
 wkkkis-hooks list
 
 # Update a hook to the latest version
-wkkkis-hooks update use-debounce
+wkkkis-hooks update use-debounce-callback
 
 # Remove a hook
-wkkkis-hooks remove use-debounce
+wkkkis-hooks remove use-debounce-callback
 ```
 
 ---
@@ -99,8 +99,8 @@ migrate --path=<newDir>       Move hooks to a new folder
 
 ```bash
 wkkkis-hooks init --path=src/shared/hooks --alias-prefix=@/ --alias-target=src
-wkkkis-hooks add use-boolean
-wkkkis-hooks add use-clipboard
+wkkkis-hooks add use-toggle
+wkkkis-hooks add use-copy-to-clipboard
 ```
 
 Now you can import:
